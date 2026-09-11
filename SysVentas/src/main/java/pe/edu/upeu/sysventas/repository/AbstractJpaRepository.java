@@ -42,7 +42,7 @@ public abstract class AbstractJpaRepository <T, ID>
 
     @Override
     public List<T> findAll() {
-        return List.of();
+        return new ArrayList<>(data);
     }
 
     @Override
